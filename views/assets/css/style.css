@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  a, a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /*----------------- main container------------------------ */
+  #pageContainer {
+    /* background: #fafafa; */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  
+  /*------------------ header-Section------------------------ */
+  #mastHeadContainer {
+    width: 100%;
+    height: 65px;
+    padding: 7px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    z-index: 1;
+    border: 1px solid #e8e8e8;
+  }
+  
+  #mastHeadContainer button:not(.searchButton),
+  #mastHeadContainer .rightIcons img {
+    cursor: pointer;
+    border: none;
+    /* width: 55px; */
+    margin-top: -5px;
+    height: 55px;
+    background: transparent;
+    padding: 8px;
+  }
+
+  #mastHeadContainer img{
+    margin-bottom: 15px;
+  }
+  
+  #mastHeadContainer .rightIcons {
+    height: 100%;
+  }
+  
+  #mastHeadContainer button img {
+    width: 100%;
+    height: 25px;
+  }
+  
+  #mastHeadContainer .logoContainer {
+    width: 150px;
+  }
+  
+  #mastHeadContainer .logoContainer img {
+    height: 28px;
+    margin-left: 20px;
+  }
+  
+  /* searchBar */
+  .searchBarContainer {
+    flex: 1;
+    margin: 0 422px;
+    display: flex;
+  }
+  
+  .searchBarContainer form {
+    flex: 1;
+    display: flex;
+  }
+  
+  .searchBarContainer form input {
+    flex: 1;
+    max-width: 600px;
+    padding: 2px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+  }
+  
+  .searchBarContainer .searchButton {
+    width: 65px;
+    height: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+  }
+  
+  #mastHeadContainer .searchBarContainer .searchButton img {
+    height: 20px;
+    width: 20px;
+  }
+  
+  /*----------------------- Side navBar---------------------- */
+  /* #sideNavContainer {
+    width: 240px;
+    padding-top: 56px;
+    background: #f5f5f5;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+  } */
+  
+  /* -------------------Main section------------------------  */
+  #mainSectionContainer {
+    padding-top: 56px;
+    display: flex;
+    
+  }
+  
+  #mainContentContainer {
+    padding: 10px 30px;
+    flex: 1;
+    display: flex;
+    background-color: #fafafa;
+    box-sizing: border-box;
+  }
+  
+  #mainSectionContainer.leftPadding {
+    padding-left: 246px;
+  }
+  
+  /* Upload content ---> column */
+  
+  .column {
+    flex-grow: 1;
+    background-color: #ffff;
+    padding: 20px;
+    min-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 3px 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* form section */
+  form {
+    flex: 1;
+  }
+  
+  /* SignIN page */
+  
+  .signInContainer {
+    background-color: #efefee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signInContainer .header img {
+    width: 100px;
+  }
+  
+  .signInContainer .column {
+    flex-grow: 0;
+    flex-direction: column;
+    padding: 20px 40px;
+    width: 450px;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+  
+  .signInContainer .column .header {
+    padding: 20px 0px;
+  }
+  
+  .signInContainer .column h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 16px;
+    line-height: 34px;
+  }
+  
+  .signInContainer .column .header span {
+    font-size: 14px;
+  }
+  
+  .signInContainer .column form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signInContainer .column form input[type="text"],
+  .signInContainer .column form input[type="email"],
+  .signInContainer .column form input[type="password"] {
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    padding: 10px 0;
+    outline: none;
+  }
+  
+  .signInContainer .column form input[type="text"]:hover,
+  .signInContainer .column form input[type="email"]:hover,
+  .signInContainer .column form input[type="password"]:hover {
+    background-color: #dedede1a;
+  }
+  
+  .signInContainer .column form input[type="submit"] {
+    height: 40px;
+    width: 100px;
+    font-weight: 500;
+    margin: 15px 0;
+  }
+  
+  .signInContainer .column .loginMessage {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  

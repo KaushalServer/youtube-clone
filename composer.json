@@ -1,0 +1,13 @@
+{
+    "name": "kaushalpratapsingh/video_tuto",
+    "description": "A simple video streaming place",
+    "autoload": {
+        "psr-4": {
+            "Kaushalpratapsingh\\VideoTuto\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.7",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
